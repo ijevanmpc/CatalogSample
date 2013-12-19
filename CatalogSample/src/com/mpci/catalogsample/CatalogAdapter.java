@@ -9,6 +9,11 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
  
+/*
+ * In this activity, we're creating an adapter.
+ * 
+ * @authors Hovik & Roza
+ */
  
 public class CatalogAdapter extends BaseAdapter{
       Context cont;      
@@ -20,19 +25,29 @@ public class CatalogAdapter extends BaseAdapter{
             objects = mylist;
             lInflater = (LayoutInflater) cont.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
           }
- 
+ /*
+  * Returns the number of rows in the data array
+  */
       public int getCount() {
         return objects.size();
       }
- 
+ /*
+  * Returns an array of data that is at the position
+  */
       public Object getItem(int position) {
             return objects.get(position);
       }
- 
+ /*
+  * Returns the identifier of the data array element that is at the position
+  */
       public long getItemId(int position) {
             return position;
      }
- 
+ /*
+  * Forms for the position to position View,
+  * responsible for displaying the string in the list. 
+  * This method is the template elements are assigned specific values ​​of the dataset. 
+  */
       public View getView(int position, View convertView, ViewGroup parent) {
         
         View view = convertView;
@@ -43,7 +58,7 @@ public class CatalogAdapter extends BaseAdapter{
  
         ListData p = ((ListData) getItem(position));
  
-         
+         //View fill in the list item data
         ((TextView) view.findViewById(R.id.textView1)).setText(p.name);
         ((TextView) view.findViewById(R.id.textView2)).setText("Age :" + p.age + "                ");
         ((ImageView) view.findViewById(R.id.imageView1)).setImageResource(p.image);
