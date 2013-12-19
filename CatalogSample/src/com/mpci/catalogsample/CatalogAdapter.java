@@ -16,10 +16,12 @@ import android.widget.TextView;
  */
  
 public class CatalogAdapter extends BaseAdapter{
-      Context cont;      
-      LayoutInflater lInflater;
-      ArrayList<ListData> objects;
- 
+      Context cont;                //Context object
+      LayoutInflater lInflater;    //Layout Inflater object
+      ArrayList<ListData> objects; //Create object of ArrayList
+ /*
+  * This is constructor
+  */
       CatalogAdapter(Context context, ArrayList<ListData> mylist) {
               cont = context;
             objects = mylist;
@@ -33,12 +35,14 @@ public class CatalogAdapter extends BaseAdapter{
       }
  /*
   * Returns an array of data that is at the position
+  * @param position - element of the array data
   */
       public Object getItem(int position) {
             return objects.get(position);
       }
  /*
   * Returns the identifier of the data array element that is at the position
+  * @param position - element of the array data
   */
       public long getItemId(int position) {
             return position;

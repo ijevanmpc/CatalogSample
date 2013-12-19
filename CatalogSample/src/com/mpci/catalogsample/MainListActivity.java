@@ -16,24 +16,24 @@ public class MainListActivity extends ListActivity {
    
     private ArrayList<ListData> catalog;
     /* 
-     * This is names array
+     * This are names array
      */
     String[] names = { "Hovik Beglaryan", "Serine Bejanyan", "Lilit Antonyan",
             "Artush Markosyan", "Artak Niazyan", "Roza Martirosyan"};
     /*
      * HTML description names
      */
-String[] desc = {"<h1>Hovik Beglaryan</h1> <center><img src=\"hov.jpg\"></center><p><b>Hovik Beglaryan</b>!!!</p>", 
+String[] desc = {"<h1>Hovik Beglaryan</h1> <center><img src=\"hov.jpg\"></center>", 
        
         "<h1>Serine Bejanyan</h1>", "<h1>Lilit Antonyan</h1>",
         "<h1>Artush Markosyan</h1>", "<h1>Artak Niazyan</h1>",
         "<h1>Roza Martirosyan</h1>"};
       /*
-       *This is ages array                      
+       *This are ages array                      
        */
     int[] age={30,21,20,22,24,22};
     /*
-     *This is images array                      
+     *This are images array                      
      */
     
     int[] img={R.drawable.hov,R.drawable.ser,R.drawable.lil,
